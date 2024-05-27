@@ -275,11 +275,34 @@ body {
   padding: 17px 38px;
   font-weight: 600;
 }
-
+/* ===========================================================brands=========================================================== */
+.brands-container {
+  margin-bottom: 200px;
+  backdrop-filter: blur(50px); /*розмиття фону*/
+  background-color: rgba(44, 53, 61, 0.2);
+  border-radius: 25px;
+  background-image: radial-gradient(
+    circle at left top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 72, 66, 0.4) 1%,
+    rgba(0, 0, 0, 0) 11%
+  ); /*Це правило задає фонове зображення радіального градієнта. Центр градієнта знаходиться в лівому верхньому кутку.*/
+}
 .brands-title {
   color: var(--colorTextBrands);
   font-size: 24px;
+  padding-top: 55px;
+  margin-bottom: 55px;
+  text-align: center;
 }
+.brands-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 107px;
+  padding-bottom: 60px;
+}
+/* ===========================================================newcomer=========================================================== */
 
 .info-title {
   font-size: 48px;
