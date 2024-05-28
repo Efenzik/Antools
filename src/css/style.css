@@ -298,8 +298,8 @@ body {
   text-align: center;
 }
 .brands-photo {
-  display: inline-block;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
   column-gap: 107px;
   padding-bottom: 60px;
@@ -315,7 +315,7 @@ body {
 .info-text {
   color: var(--thirdColorText);
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 167%;
 }
 
 .info-button {
@@ -341,7 +341,7 @@ body {
   color: var(--thirdColorText);
   font-weight: 400;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 214%;
 }
 
 .app-link {
@@ -372,7 +372,7 @@ body {
   font-family: var(--Familytwo);
   font-weight: 400;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 214%;
   letter-spacing: 0.01em;
 }
 
@@ -385,7 +385,7 @@ body {
 .join-text {
   color: var(--thirdColorText);
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 167%;
   text-align: center;
 }
 
@@ -410,7 +410,7 @@ body {
   color: var(--thirdColorText);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.79;
+  line-height: 179%;
 }
 
 .contact-title,
