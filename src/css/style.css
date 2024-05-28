@@ -278,6 +278,8 @@ body {
 /* ===========================================================brands=========================================================== */
 .brands-container {
   margin-bottom: 200px;
+}
+.brands-container {
   backdrop-filter: blur(50px); /*розмиття фону*/
   background-color: rgba(44, 53, 61, 0.2);
   border-radius: 25px;
@@ -296,12 +298,13 @@ body {
   text-align: center;
 }
 .brands-photo {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  justify-content: space-between;
   align-items: center;
   column-gap: 107px;
   padding-bottom: 60px;
 }
+
 /* ===========================================================newcomer=========================================================== */
 
 .info-title {
@@ -401,7 +404,7 @@ body {
   border-radius: 8px;
 }
 
-/* footer */
+/* ===========================================================footer=========================================================== */
 
 .footer-text {
   color: var(--thirdColorText);
