@@ -31,7 +31,7 @@ body {
   margin: 0 auto;
 }
 
-/* header */
+/* ===========================================================header=========================================================== */
 
 .header {
   padding-top: 26px;
@@ -39,7 +39,9 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
 }
 .logo-header {
   display: flex;
@@ -47,13 +49,22 @@ body {
 .menu-list {
   display: flex;
   align-items: center;
+  column-gap: 40px;
+}
+.list-item {
+  color: var(--thirdColorText);
+}
+
+.list-item:hover {
+  color: var(--secondFamily);
+  transition: 0.3s ease-in;
 }
 .list-item:nth-child(2)::after {
   content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
-
+  margin-left: 4px;
   background-image: url(../img/other/vector_icon.svg);
   background-size: contain;
   background-position: bottom;
@@ -73,6 +84,7 @@ body {
 .button-entry:hover {
   background-color: var(--colorHover);
   color: var(--colorTextHover);
+  transition: 0.3s ease-in;
 }
 
 /* ===========================================================MAIN============================================================ */
@@ -129,7 +141,7 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
-.form-info::before {
+.form-info::after {
   content: "";
   display: inline-block;
   width: 24px;
@@ -201,11 +213,18 @@ body {
   border-radius: 15px;
 }
 .tools-card:hover {
-  transform: translate(0px, -20px); /*переміщає елемент на 20px вгору*/
-  transition: transform 0.5s ease-in; /*Це правило визначає анімацію для transform. анімація триватиме до 0.5с. ease-in повільна анімація на початку та прискорена наприкінці*/
-  backdrop-filter: blur(50px); /*задає радіус розмиття в 50 px*/
-  background: rgba(40, 48, 54, 0.6); /*Колір*/
-  /* З цим мені допоміг Даня, але усе пояснити зможу і сам! */
+  transform: translate(0px, -20px);
+  transition: transform 0.5s ease-in;
+  backdrop-filter: blur(50px);
+  background: rgba(17, 22, 26, 0.6);
+  backdrop-filter: blur(50px);
+  background-color: rgba(17, 22, 26, 0.6);
+  background-image: radial-gradient(
+    circle at right top,
+    rgb(0, 0, 0) 0%,
+    rgba(251, 101, 32, 0.2) 0%,
+    rgba(0, 0, 0, 0) 20%
+  );
 }
 
 .tool-name {
@@ -276,6 +295,7 @@ body {
 
 .tools-link {
   color: var(--colorHover);
+  background-color: var(--colorButton);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 17px 38px;
@@ -322,13 +342,14 @@ body {
 .newcomer-container {
   display: flex;
   justify-content: center;
+  column-gap: 110px;
 }
 .newcomer {
   margin-bottom: 200px;
+  padding-bottom: 100px;
 }
 .newcomer-info {
   min-width: 427px;
-  margin-right: 200px;
 }
 .newcomer-apps {
   display: flex;
@@ -390,6 +411,9 @@ body {
     rgba(255, 118, 55, 0.2) 0%,
     rgba(0, 0, 0, 0) 20%
   );
+}
+.app-link {
+  padding-top: 30px;
 }
 
 .app-price {
