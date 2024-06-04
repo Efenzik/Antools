@@ -216,12 +216,12 @@ body {
   transform: translate(0px, -20px);
   transition: transform 0.5s ease-in;
   backdrop-filter: blur(50px);
-  background: rgba(17, 22, 26, 0.6);
+
   backdrop-filter: blur(50px);
-  background-color: rgba(17, 22, 26, 0.6);
+  background-color: rgba(40, 48, 54, 0.6);
   background-image: radial-gradient(
     circle at right top,
-    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0, 1) 0%,
     rgba(251, 101, 32, 0.2) 0%,
     rgba(0, 0, 0, 0) 20%
   );
