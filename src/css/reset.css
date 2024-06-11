@@ -111,3 +111,6 @@ button {
   border: none;
   outline: none;
 }
+input {
+  border: 0;
+}

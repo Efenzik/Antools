@@ -565,12 +565,12 @@ body {
   align-items: top;
 }
 
-.footer-menu-bar {
+.footer-menu {
   display: flex;
   gap: 115px;
 }
 
-.footer-information {
+.footer-info {
   max-width: 260px;
 }
 
@@ -612,9 +612,11 @@ body {
 .categories-item:hover,
 .company-item:hover {
   color: var(--secondFamily);
-  transition: 0.2s ease;
 }
 /* other */
 .brand-link {
   cursor: pointer;
+}
+.app-text {
+  margin-bottom: 30px;
 }
